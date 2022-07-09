@@ -2,12 +2,26 @@ const { DataTypes } = require("sequelize")
 const db = require("../db/connection")
 
 const User =  db.define("Usuarios",{
-    nombre:{
+    nombre_persona:{
         type:DataTypes.STRING,
     },
-    email:{
+    apellido_persona:{
         type:DataTypes.STRING,
-        unique:true,
+    },
+    dni_persona:{
+        type:DataTypes.STRING,
+    },
+    fecha_nac_persona:{
+        type:DataTypes.STRING,
+    },
+    telefono_persona:{
+        type:DataTypes.STRING,
+    },
+    username_usuario:{
+        type:DataTypes.STRING,
+    },
+    password_usuario:{
+        type:DataTypes.STRING,
     },
     activo:{
         type:DataTypes.BOOLEAN,

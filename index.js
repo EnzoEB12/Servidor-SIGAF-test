@@ -24,5 +24,6 @@ app.set('port', process.env.PORT || 3000);
 
 // Routes
 app.use(require('./routes/user.routes'));
+app.use(require('./routes/establecimiento.routes'));
  
 app.listen(app.get('port'), ()=> console.log(`Server en linea en el puerto: ${app.get('port')}`))
